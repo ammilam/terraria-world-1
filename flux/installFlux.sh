@@ -1,10 +1,8 @@
 ##
 # Install Flux
 ##
+# 0 = Environment
 ##
-
-
-
 
 # Helm install flux
 helm upgrade --install flux \

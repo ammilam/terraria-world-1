@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #sets environment variables
-export REGION=us-east1
+read -p 'GCP Region: ' REGION
 export ZONE=$REGION-b
 export NAME=terraria-world-1
 export WORLD=worlds_World_1.wld
@@ -9,8 +9,8 @@ export COMPUTE_ENGINE_SA_EMAIL=$(gcloud iam service-accounts list --filter="name
 export REPO=terraria-world-1
 export USERNAME=ammilam
 #sets github specific environment variables to be used later
-#read -p 'GitHub Repo: ' REPO
-#read -p 'GitHub Username: ' USERNAME
+read -p 'GitHub Repo: ' REPO
+read -p 'GitHub Username: ' USERNAME
 read -sp 'GitHub Password: ' PASSWORD
 
 cat <<EOF >>startup-script.yaml
@@ -41,7 +41,9 @@ spec:
               set -o errexit
               set -o pipefail
               set -o nounset
-              wget gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD /tmp/world
+              sudo mkdir /tmp/world
+              cd /tmp/world
+              wget https://storage.googleapis.com/$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD
 EOF
 
 gsutil mb -b on gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME
