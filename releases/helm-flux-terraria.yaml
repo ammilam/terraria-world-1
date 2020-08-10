@@ -10,7 +10,7 @@ spec:
   chart:
     git: git@github.com:ammilam/terraria-world-1
     path: chart
-    ref: test
+    ref: master
   valuesFrom:
   - chartFileRef:
       path: ../chart/values.yaml

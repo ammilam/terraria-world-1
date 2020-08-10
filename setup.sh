@@ -4,9 +4,6 @@
 read -p 'GCP Region: ' REGION
 export ZONE=$REGION-b
 export NAME=terraria-world-1
-#export WORLD=worlds_World_1.wld
-export REPO=terraria-world-1
-export USERNAME=ammilam
 #sets github specific environment variables to be used later
 read -p 'GitHub Repo: ' REPO
 read -p 'GitHub Username: ' USERNAME
