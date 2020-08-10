@@ -29,6 +29,7 @@ spec:
             - |
               cp /config/config.json /world/config.json
               chmod 777 /world/config.json
+              [ ! -f '/world/{{ .Values.worldName }}.wld' ] && wget {{ .Values.worldUrl }}L -o '/world/{{ .Values.worldName }}.wld'
           volumeMounts:
           - name: terraria-worlds
             mountPath: /world
@@ -45,7 +46,7 @@ spec:
         - name: {{ .Chart.Name }}
           args:
             - "-world"
-            - "/terraria/world/worlds_World_1.wld"
+            - "/world/worlds_World_1.wld"
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -68,16 +69,11 @@ spec:
 #              path: /
 #              port: http
           volumeMounts:
-          - name: tmp
-            mountPath: /terraria/world
           - name: terraria-worlds
             mountPath: /world
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       volumes:
-      - name: tmp
-        hostPath:
-          path: /tmp/world
       - name: configmap
         configMap:
           name: {{ template "terraria.fullname" . }}

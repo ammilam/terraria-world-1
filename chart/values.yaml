@@ -1,8 +1,9 @@
 # Default values for terraria.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
-replicaCount: 
+worldUrl: https://github.com/ammilam/terraria-world-1/raw/master/worlds_World_1.wld
+worldName: worlds_World_1
+replicaCount: 1
 
 image:
   repository: ryshe/terraria
@@ -25,7 +26,7 @@ rest:
     type: NodePort
     port: 7777
     annotations: {}
-
+#TO DO - make worldfile variable
 terraria:
   tty: false
   stdin: false
