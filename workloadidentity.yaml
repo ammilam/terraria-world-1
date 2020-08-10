@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  labels:
-    name: flux
-  name: flux
-  namespace: flux
-  annotations:
-   serviceAccount: flux-gcp@southern-scene-271919.iam.gserviceaccount.com 
