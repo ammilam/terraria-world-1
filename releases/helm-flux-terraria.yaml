@@ -1,3 +1,4 @@
+---
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -18,7 +19,7 @@ spec:
 
     image:
       repository: ryshe/terraria
-      tag: latest
+      tag: vanilla-1.4.0.5
       pullPolicy: Always
 
     imagePullSecrets: []
@@ -203,5 +204,5 @@ spec:
       ##   GKE, AWS & OpenStack)
       ##
       accessModes:
-        - ReadWriteOnce
+      - ReadWriteOnce
       size: 1Gi
