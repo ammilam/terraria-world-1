@@ -1,8 +1,8 @@
 # Default values for terraria.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-worldUrl: https://github.com/ammilam/terraria-world-1/raw/master/worlds_World_1.wld
-worldName: worlds_World_1
+worldUrl: https://github.com/ammilam/terraria-world-1/raw/master/BuildersWorkshop_3Journey.wld
+worldName: BuildersWorkshop_3Journey
 replicaCount: 1
 
 image:
