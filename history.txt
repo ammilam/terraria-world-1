@@ -1,0 +1,1116 @@
+alias kgingwojsonl='kubectl get ingress --watch -o=json -l'
+alias ksysgingwojsonl='kubectl --namespace=kube-system get ingress --watch -o=json -l'
+alias kgcmwojsonl='kubectl get configmap --watch -o=json -l'
+alias ksysgcmwojsonl='kubectl --namespace=kube-system get configmap --watch -o=json -l'
+alias kgsecwojsonl='kubectl get secret --watch -o=json -l'
+alias ksysgsecwojsonl='kubectl --namespace=kube-system get secret --watch -o=json -l'
+alias kgnowojsonl='kubectl get nodes --watch -o=json -l'
+alias kgnswojsonl='kubectl get namespaces --watch -o=json -l'
+alias kgslwl='kubectl get --show-labels --watch -l'
+alias ksysgslwl='kubectl --namespace=kube-system get --show-labels --watch -l'
+alias kgposlwl='kubectl get pods --show-labels --watch -l'
+alias ksysgposlwl='kubectl --namespace=kube-system get pods --show-labels --watch -l'
+alias kgdepslwl='kubectl get deployment --show-labels --watch -l'
+alias ksysgdepslwl='kubectl --namespace=kube-system get deployment --show-labels --watch -l'
+alias kgwsll='kubectl get --watch --show-labels -l'
+alias ksysgwsll='kubectl --namespace=kube-system get --watch --show-labels -l'
+alias kgpowsll='kubectl get pods --watch --show-labels -l'
+alias ksysgpowsll='kubectl --namespace=kube-system get pods --watch --show-labels -l'
+alias kgdepwsll='kubectl get deployment --watch --show-labels -l'
+alias ksysgdepwsll='kubectl --namespace=kube-system get deployment --watch --show-labels -l'
+alias kgslwowidel='kubectl get --show-labels --watch -o=wide -l'
+alias ksysgslwowidel='kubectl --namespace=kube-system get --show-labels --watch -o=wide -l'
+alias kgposlwowidel='kubectl get pods --show-labels --watch -o=wide -l'
+alias ksysgposlwowidel='kubectl --namespace=kube-system get pods --show-labels --watch -o=wide -l'
+alias kgdepslwowidel='kubectl get deployment --show-labels --watch -o=wide -l'
+alias ksysgdepslwowidel='kubectl --namespace=kube-system get deployment --show-labels --watch -o=wide -l'
+alias kgwowidesll='kubectl get --watch -o=wide --show-labels -l'
+alias ksysgwowidesll='kubectl --namespace=kube-system get --watch -o=wide --show-labels -l'
+alias kgpowowidesll='kubectl get pods --watch -o=wide --show-labels -l'
+alias ksysgpowowidesll='kubectl --namespace=kube-system get pods --watch -o=wide --show-labels -l'
+alias kgdepwowidesll='kubectl get deployment --watch -o=wide --show-labels -l'
+alias ksysgdepwowidesll='kubectl --namespace=kube-system get deployment --watch -o=wide --show-labels -l'
+alias kgwslowidel='kubectl get --watch --show-labels -o=wide -l'
+alias ksysgwslowidel='kubectl --namespace=kube-system get --watch --show-labels -o=wide -l'
+alias kgpowslowidel='kubectl get pods --watch --show-labels -o=wide -l'
+alias ksysgpowslowidel='kubectl --namespace=kube-system get pods --watch --show-labels -o=wide -l'
+alias kgdepwslowidel='kubectl get deployment --watch --show-labels -o=wide -l'
+alias ksysgdepwslowidel='kubectl --namespace=kube-system get deployment --watch --show-labels -o=wide -l'
+alias kexn='kubectl exec -i -t --namespace'
+alias klon='kubectl logs -f --namespace'
+alias kpfn='kubectl port-forward --namespace'
+alias kgn='kubectl get --namespace'
+alias kdn='kubectl describe --namespace'
+alias krmn='kubectl delete --namespace'
+alias kgpon='kubectl get pods --namespace'
+alias kdpon='kubectl describe pods --namespace'
+alias krmpon='kubectl delete pods --namespace'
+alias kgdepn='kubectl get deployment --namespace'
+alias kddepn='kubectl describe deployment --namespace'
+alias krmdepn='kubectl delete deployment --namespace'
+alias kgsvcn='kubectl get service --namespace'
+alias kdsvcn='kubectl describe service --namespace'
+alias krmsvcn='kubectl delete service --namespace'
+alias kgingn='kubectl get ingress --namespace'
+alias kdingn='kubectl describe ingress --namespace'
+alias krmingn='kubectl delete ingress --namespace'
+alias kgcmn='kubectl get configmap --namespace'
+alias kdcmn='kubectl describe configmap --namespace'
+alias krmcmn='kubectl delete configmap --namespace'
+alias kgsecn='kubectl get secret --namespace'
+alias kdsecn='kubectl describe secret --namespace'
+alias krmsecn='kubectl delete secret --namespace'
+alias kgoyamln='kubectl get -o=yaml --namespace'
+alias kgpooyamln='kubectl get pods -o=yaml --namespace'
+alias kgdepoyamln='kubectl get deployment -o=yaml --namespace'
+alias kgsvcoyamln='kubectl get service -o=yaml --namespace'
+alias kgingoyamln='kubectl get ingress -o=yaml --namespace'
+alias kgcmoyamln='kubectl get configmap -o=yaml --namespace'
+alias kgsecoyamln='kubectl get secret -o=yaml --namespace'
+alias kgowiden='kubectl get -o=wide --namespace'
+alias kgpoowiden='kubectl get pods -o=wide --namespace'
+alias kgdepowiden='kubectl get deployment -o=wide --namespace'
+alias kgsvcowiden='kubectl get service -o=wide --namespace'
+k get pods
+kubens
+kubens flux
+k get pods
+k logs flux-548544dfd6-mdvkt
+k get pods
+k logs helm-operator-79c948cdf-cfq9f
+k get ssh
+k get secret
+k describe secret flux-ssh
+./installFlux.sh 
+./installFlux.sh amilam
+clear
+ls
+cd charts/
+ls
+cd terraria-world-1/
+ls -al
+cd ~/.ssh/
+ls
+ls -al
+cd ~/charts/
+ls
+cd ..
+ls
+./installFlux.sh 
+./installFlux.sh andrew
+k get logs
+k get pods
+k logs flux-6c4df79f5f-58bhr
+k get pods
+k hr
+k get helm release
+k get hr
+kubens default
+k get hr
+k describe terraria-world-1
+terraria-world-1k describe hr terraria-world-1
+k describe hr terraria-world-1
+./installFlux.sh andrew
+k get pods
+kubens flux
+k get pods
+k logs flux-7f5dcf9847-7wksh
+k logs flux-7f5dcf9847-7wksh -f
+kubens default\
+ts=2020-08-06T22:01:40.298079641Z caller=loop.go:133 component=sync-loop event=refreshed url=ssh://git@github.com/ammilam/terraria-world-1.git branch=master HEAD=clear
+kubens default
+ls
+./installHelmOperator.sh 
+./installFlux.sh andrew
+k get pods
+kubens
+kubens flux
+ktail
+ke
+k e
+k get events
+k get pods
+k logs flux-7f5dcf9847-7wksh -f
+k get pods
+ gcloud container clusters get-credentials cluster-1 --zone us-east1-c --project exam-prep-285301  && kubectl get deployment terraria-world-1 -o yaml gcloud container clusters get-credentials cluster-1 --zone us-east1-c --project exam-prep-285301 \
+ gcloud container clusters get-credentials cluster-1 --zone us-east1-c --project exam-prep-285301  && kubectl get deployment terraria-world-1 -o yaml
+ls
+mkdir flux
+sudo mv values/ flux
+ls
+mv installFlux.sh flux
+mv installHelmOperator.sh flux
+ls
+mv id_rsa flux
+mv id_rsa.pub flux
+mv README.md flux
+ls
+mv flux charts/terraria-world-1/
+cd charts/terraria-world-1/
+git add --all
+git status
+git commit -m "adding flux stuff"
+git branch -a
+git push origin world
+k get pods
+gsutil mb gs://terraria-world-1
+ls
+mkdir test
+cd test
+gcloud container clusters get-credentials cluster-2 --zone us-east1-b --project exam-prep-285301
+k get pods
+touch setup.sh
+vi setup.sh 
+chmod +x setup.sh
+./setup.sh 
+k get pods -n flux
+k delete namespace flux
+./setup.sh 
+cd ..
+ls
+cd test/
+ls
+cp setup.sh /terraria-world-1
+sudo cp setup.sh terraria-world-1/
+ls
+cd terraria-world-1/
+ls
+ls -al
+chmod +x setup.sh 
+ls
+ls -al
+rm terraria-0.4.0.tgz 
+ls
+git add --all
+git commit -m "setup.sh"
+git push
+k get pods
+k get pods -n flux
+k logs helm-operator-77b6744597-dhbfh
+k logs helm-operator-77b6744597-dhbfh -n flux
+k get pods
+kubens flux
+k get pods
+k logs flux-66cd458f7d-9ml8d
+k logs flux-66cd458f7d-9ml8d -f
+k get pods
+k logs helm-operator-77b6744597-dhbfh -f
+ls
+cd flux/
+./installHelmOperator.sh 
+k get pods
+./installFlux.sh andrew
+k get secret
+./installFlux.sh andrew
+git add --all
+git commit -m "."
+git push
+git pull
+git push
+ke
+k get pods
+k logs flux-7f5dcf9847-hhsl8
+kubens default
+k get pods
+ls
+cd ..
+ls
+cd ..
+ls
+cat setup.sh 
+./setup.sh 
+ls
+cd test/
+ls
+cd terraria-world-1/
+git pull
+ls
+gcloud help -- service account
+gcloud iam service-account list
+gcloud iam service-accounts list
+gcloud iam service-accounts list|grep Compute Engine
+gcloud iam service-accounts list  --flatten="serviceAccounts[].scopes[]" --format="csv(serviceAccounts.email())"
+gcloud iam service-accounts list  --flatten="serviceAccounts[].scopes[]" --format="csv(serviceAccounts.email()"
+gcloud iam service-accounts list  --flatten="serviceAccounts[].scopes[]" --format="csv(serviceAccounts.email)"
+gcloud iam service-accounts list  --flatten="serviceAccounts[].scopes[]"
+gcloud iam service-accounts list
+gcloud topic filters
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='table(email)'
+export SVCACCT=`${gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='table(email)'}`
+echo $SVCACCT
+export SVCACCT="${gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='table(email)'}"
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='table(email)'
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'
+(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')
+EXPORT A=(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')
+EXPORT A="(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')"
+export A="(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')"
+echo $A
+export A="$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')"
+echo $A
+export A="$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)' --flatten="bindings[].email")"
+echo $A
+export A="$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)' --flatten="bindings[].name")"
+echo $A
+export A="$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)' --flatten="bindings[].member")"
+echo $A
+export A="$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)' --flatten="email")"
+echo $A
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)' --fl
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)' --flatten="email"
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'
+gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'|grep compute
+gsutil acl ch -u foo@developer.gserviceaccount.com:W gs://example-bucket
+gsutil acl ch -u $A:R gs://terraria-world-1/worlds_World_1.wld
+gsutil acl ch -u $A:V gs://terraria-world-1/worlds_World_1.wld
+gsutil acl ch -u $A:R gs://terraria-world-1/
+gsutil acl ch -u $A:R gs:/terraria-world-1
+gsutil acl ch -u $A:R gs:/terraria-world-1/world_World_1.wld
+gsutil acl ch -u $A:R https://terraria-world-1/world_World_1.wld
+gsutil acl ch -u $A:R gs://terraria-world-1/worlds_World_1.wld
+gsutil acl ch -u $A:READ gs://terraria-world-1/worlds_World_1.wld
+gsutil acl ch -d $A:READ gs://terraria-world-1/worlds_World_1.wld
+ls
+./setup.sh 
+rm terraria-world-1/
+rm -rf terraria-world-1/
+ls
+git add --all
+git commit -m "."
+git push
+ls
+./setup.sh 
+echo $PROJECT_ID
+echo $PROJECT
+echo $PROJECTID
+./setup.sh 
+git add --all
+git commit -m "."
+git push
+./setup.sh 
+k get pods
+ls
+cd test/terraria-world-1/
+./setup.sh 
+ls
+cd test/
+ls
+cd terraria-world-1/
+ls
+./setup.sh 
+git add --all
+rm startup-script.sh 
+git add --all
+git commit -m "."
+git push
+./setup.sh 
+k get pods
+k get pods -n flux
+k logs helm-operator-77b6744597-r8sch -n flux
+k logs helm-operator-77b6744597-r8sch -n flux -f
+ls
+rm startup-script.sh 
+./setup.sh 
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'|grep compute)
+echo $A
+./setup.sh 
+kubens flux
+k get pods
+k logs flux-7f5dcf9847-vsv5w -f
+s
+kubens default
+k get pods
+kubens flux
+k get pods
+k logs helm-operator-77b6744597-czs4q
+k logs helm-operator-77b6744597-czs4q -f
+./setup.sh 
+export A=$("gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'|grep compute")
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'|grep compute)
+export A=$(gcloud iam service-accounts list   --filter=\'email ~ [0-9]*-compute@.*\'   --format=\'(email)\'|grep compute)
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')|grep compute
+echo $A
+./setup.sh 
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')|grep compute
+LS
+echo $A
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email')|grep compute
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='\(email)\')|grep compute
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='\(email)'\)|grep compute
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='\(email)'\)
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='\(email)')
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')
+echo $A
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)')|grep compute
+echo $A
+export A=$(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'|grep compute)
+echo $A
+./setup.sh 
+k get pods
+kubens flux
+k get pods
+k logs helm-operator-77b6744597-vxdbr
+k logs helm-operator-77b6744597-vxdbr -f
+k get pods
+k logs flux-7f5dcf9847-wpb8x -f
+k get pods
+k logs helm-operator-77b6744597-vxdbr -f
+./setup.sh 
+k get pods
+kubens flux
+k get pods
+k logs helm-operator-77b6744597-v5r8t -f
+k get pods
+k logs flux-7f5dcf9847-pg896 -f
+ls
+cd flux/
+./installFlux.sh 
+./installFlux.sh andrew
+./installHelmOperator.sh 
+k get pods
+k logs -f flux-7f5dcf9847-pg896
+k get pods
+k logs helm-operator-77b6744597-v5r8t -f
+k get pods
+k get hr
+k get hr -n default
+ls
+cat values/flux-andrew.yaml 
+k get pods
+k delete pod flux-7f5dcf9847-pg896
+k get pods
+k logs flux-7f5dcf9847-nb4k5 -f
+ls
+cd test/
+ls
+cd terraria-world-1/
+git add --all
+git commit -m "."
+git push
+ls
+cat setup.sh 
+gsutil acl ch -d $A:READ gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts/startup-script.sh
+gsutil acl ch -d $A:READ gs://$DEVSHELL_PROJECT_ID-us-central1-startup-scripts/startup-script.sh
+echo $A
+export A=$(echo $(gcloud iam service-accounts list   --filter='email ~ [0-9]*-compute@.*'   --format='(email)'|grep compute))
+gsutil acl ch -d $A:READ gs://$DEVSHELL_PROJECT_ID-us-central1-startup-scripts/startup-script.sh
+gsutil acl ch -d $A:OWNER gs://$DEVSHELL_PROJECT_ID-us-central1-startup-scripts/startup-script.sh
+gsutil defacl ch -d  $A:OWNER gs://$DEVSHELL_PROJECT_ID-us-central1-startup-scripts/startup-script.sh
+gsutil defacl ch -d  $A:OWNER gs://$DEVSHELL_PROJECT_ID-us-central1-startup-scripts
+gsutil defacl ch -u $A:OWNER gs://$DEVSHELL_PROJECT_ID-us-central1-startup-scripts
+cd test/
+cd terraria-world-1/
+git add --all
+git commit -m "."
+git push
+./setup.sh 
+./setup.sh 
+clear
+export REGION=us-west1
+export ZONE=$REGION-b
+export NAME=terraria-world-1
+export WORLD=worlds_World_1.wld
+gsutil mb -b off gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME
+gsutil cp ./$WORLD gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD
+gsutil mb -b off gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+export COMPUTE_ENGINE_SA_EMAIL=$(gcloud iam service-accounts list --filter="name:Compute Engine default service account" --format "value(email)")
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts}
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME}
+gsutil cp ./startup-script.sh gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts/startup-script.sh
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME
+./setup.sh 
+cat gs://exam-prep-285301-us-east1-startup-scripts/
+gsutil cat gs://exam-prep-285301-startup-scripts/startup-script.sh
+gsutil cp gs://exam-prep-285301-startup-scripts/startup-script.sh
+gsutil cp gs://exam-prep-285301-startup-scripts/startup-script.sh .
+ls
+./setup.sh 
+k get pods
+k get pods -n flux
+k describe pod flux-7f5dcf9847-lwmcq -n flux
+kubectl logs -l app=flux -n flux
+kubectl logs -l app=flux -n flux|grep ssh
+kubectl logs -l app=flux -n flux -f
+k get secret
+k get secret -n flux
+k describe secret  flux-ssh
+k describe secret  flux-ssh -n flux
+ls
+ls -al
+clear
+k get pods
+k get pods -n flux
+k describe pod -l app=flux
+k describe pod -l app=flux -n flux
+k exec -it -l app=flux -n flux bash
+k get pods
+kubens flux
+k get pods
+k exec -it flux-7f5dcf9847-lwmcq bash
+ls
+cd flux/
+ls
+cat id_rsa
+cat id_rsa.pub 
+ls -al
+cat id_rsa.pub 
+k get pods
+k delete pod flux-7f5dcf9847-lwmcq
+k get pods
+k logs flux-7f5dcf9847-cgm8s
+kubens default
+k get pods
+ke
+k get events
+k get pods
+k logs terraria-world-1-56985c47b5-llckk
+k get pods -w
+ls
+cd ..
+git add --all
+git commit -m "."
+git push
+./setup.sh 
+cd test/
+ls
+cd terraria-world-1/
+ls
+ls -al
+touch git-key-deploy.sh
+cat ~/.secret/github_access_token
+cat .ssh
+ls
+cat ~/.ssh/
+ls ~/.ssh/
+ls -al ~/.ssh/
+ls
+ls -al
+cd .git/
+ls
+cat config 
+cd info/
+ls
+cd ..
+cd objects/
+ls
+cd ..
+ls -al
+ssh-keyscan       github.com,140.82.113.4 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ== >> ~/.ssh/known_hosts
+cat ~/.ssh/known_hosts 
+curl -X POST -F "login=ammilam" -F "token=ApiToken" https://github.com/api/v2/json/repos/key/ammilam/terraria-world-1/add -F "title=Bogus" -F "key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDPoZl4X0bhrvWA0AAVENF0nuKFFkPpPUK/yRTtUfffcfaFLF6PwFTc0CvACS+dS7f1fWMHLARCqOHBizFtXOkdZfA1tSXsFFUs41Quf6ROVJScDcUIerA7DETZoA5+0cEQw0LrhXq/b9pCUUjEfC+TrzB8xOMx/d+/XtEH2R0aEtDMayK+lZWfe4vRbhKhk2pw23NheRB9YHR5ywYw9YRPtAXCDNv flux"
+curl -X POST -F "login=ammilam" -F "token=ApiToken" https://github.com/api/v3/repos/key/ammilam/terraria-world-1/add -F "title=Bogus" -F "key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDPoZl4X0bhrvWA0AAVENF0nuKFFkPpPUK/yRTtUfffcfaFLF6PwFTc0CvACS+dS7f1fWMHLARCqOHBizFtXOkdZfA1tSXsFFUs41Quf6ROVJScDcUIerA7DETZoA5+0cEQw0LrhXq/b9pCUUjEfC+TrzB8xOMx/d+/XtEH2R0aEtDMayK+lZWfe4vRbhKhk2pw23NheRB9YHR5ywYw9YRPtAXCDNv flux"
+curl -X POST -F "login=ammilam" -F "token=ApiToken" https://api.github.com/api/v3/repos/key/ammilam/terraria-world-1/add -F "title=Bogus" -F "key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDPoZl4X0bhrvWA0AAVENF0nuKFFkPpPUK/yRTtUfffcfaFLF6PwFTc0CvACS+dS7f1fWMHLARCqOHBizFtXOkdZfA1tSXsFFUs41Quf6ROVJScDcUIerA7DETZoA5+0cEQw0LrhXq/b9pCUUjEfC+TrzB8xOMx/d+/XtEH2R0aEtDMayK+lZWfe4vRbhKhk2pw23NheRB9YHR5ywYw9YRPtAXCDNv flux"
+curl get https://api.github.com/api/v3/repos/ammilam/terraria-world-1/ 
+curl https://api.github.com/api/v3/repos/ammilam/terraria-world-1/ 
+curl https://api.github.com/api/v3/repos/ammilam/terraria-world-1/keys
+curl https://api.github.com/api/v3/repos/ammilam/terraria-world-1/key
+curl -u ammilam https://api.github.com/api/v3/repos/ammilam/ter
+curl -u ammilam https://api.github.com/api/v3/repos/ammilam/
+curl -u ammilam https://api.github.com/api/v3/repos/ammilam/repo/terraria-world-1
+curl -u ammilam https://api.github.com/repos/ammilam/terraria-world-1
+curl -u ammilam https://api.github.com/repos/ammilam/terraria-world-1/keys
+curl -u ammilam https://api.github.com/repos/ammilam/terraria-world-1/keys {"key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDP"}
+curl -u ammilam https://api.github.com/repos/ammilam/terraria-world-1/keys -d {"key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDP"}
+curl -u ammilam https://api.github.com/repos/ammilam/terraria-world-1/keys -d {"key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDP"}   -H "Accept: application/vnd.github.v3+json" curl -u ammilam https://api.github.com/repos/ammilam/terraria-world-1/keys -d {"key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp5fg1ZznsmGKOMzIYOMTnX2EIqjQay9n2R9Ps1gCfEPyax8x9YN8UjQV9ALSgEtHN4YdcuPSrIbdNbWFk3FUNDwgHsfk7/k1AD7dliwgPQDJVOUjFRXq1dpuDP"}   -H "Accept: application/vnd.github.v3+json"
+ls
+chmod +x git-key-deploy.sh 
+./git-key-deploy.sh 
+./setup.sh 
+k get pods -n flux
+k logs -n flux flux-7f5dcf9847-ksrg4 -f
+kubectl delete pod -n flux -l app=flux
+k get pods
+k logs -n flux -l app=flux
+k get pods
+k describe pod terraria-world-1-56985c47b5-z65gp
+k describe pod terraria-world-1-56985c47b5-z65gp -w
+k describe pod terraria-world-1-56985c47b5-z65gp -f
+k get events -w
+k get pods
+k logs terraria-world-1-56985c47b5-z65gp
+k describe pod terraria-world-1-56985c47b5-z65gp
+k describe pod terraria-world-1-56985c47b5-z65gp|grep node
+k describe pod terraria-world-1-56985c47b5-z65gp|grep Node
+gcloud compute ssh gke-terraria-world-1-default-pool-d422abe9-w643
+export COMPUTE_ENGINE_SA_EMAIL=$(gcloud iam service-accounts list --filter="name:Compute Engine default service account" --format "value(email)")
+echo $COMPUTE_ENGINE_SA_EMAIL
+export REGION=us-central1
+export ZONE=$REGION-b
+export NAME=terraria-world-1
+export WORLD=worlds_World_1.wld
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+gsutil iam set serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGI
+gsutil -fRr iam set serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGI
+gsutil -fRr iam set serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION
+gsutil iam set serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REG
+ION
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION
+gsutil iam ch serviceAccount:${COMPUTE_ENGINE_SA_EMAIL}:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member='serviceAccount:$COMPUTE_ENGINE_SA_EMAIL --role='roles/viewer'
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member=serviceAccount:$COMPUTE_ENGINE_SA_EMAIL --role=roles/viewer
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member=serviceAccount:$COMPUTE_ENGINE_SA_EMAIL --role=roles/reader
+gsutil iam ch serviceAccount:$COMPUTE_ENGINE_SA_EMAIL:objectViewer gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+gsutil iam ch serviceAccount:$COMPUTE_ENGINE_SA_EMAIL:objectOwner gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+gsutil iam ch serviceAccount:$COMPUTE_ENGINE_SA_EMAIL:objectWriter gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+gsutil iam ch serviceAccount:$COMPUTE_ENGINE_SA_EMAIL:storage.legacyObjectReader gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+gsutil iam ch serviceAccount:$COMPUTE_ENGINE_SA_EMAIL:legacyObjectReader gs://$DEVSHELL_PROJECT_ID-$REGION-startup-scripts
+ls
+cd test/terraria-world-1/
+ls
+chmod +x bucket-test.sh 
+./bucket-test.sh 
+./setup.sh 
+ls
+git add --all
+git commit -m "."
+ls
+cd flux/
+ls
+cd ..
+ls -al
+rm startup-script.sh 
+./setup.sh 
+kubectl delete pod -n flux -l app=flux
+k get pods -w
+k get pods
+k logs terraria-world-1-56985c47b5-7c6dd
+./setup.sh 
+k get pods
+k get pods n -fluex
+k get pods n -flux
+k get pods -n flux
+k logs helm-operator-77b6744597-zspq8 -n flux -f
+kubectl delete pod -n flux -l app=helm-operator
+k get pods
+k get pods -n flux
+k logs -n flux -l app=flux
+cd flux/
+./installFlux.sh 
+./installFlux.sh andrew
+kubens flux
+k get pods
+k get pods -w
+k logs flux-6786ff665f-hpg97
+kubens default
+k get pods
+k logs terraria-world-1-56985c47b5-vtjxl
+curl https://storage.cloud.google.com/exam-prep-285301-us-central1-startup-scripts/startup-script.sh
+ls
+wget https://storage.cloud.google.com/exam-prep-285301-us-central1-startup-scripts/startup-script.sh
+ls
+cat startup-script.sh 
+rm startup-script.sh 
+ls
+k get pods
+cd ..
+ls
+cd flux/
+ls
+rm id_rsa
+rm id_rsa.pub 
+cd ..
+./setup.sh 
+ls
+touch .gitignore
+git add --all
+git commit -m "."
+git push
+./setup.sh 
+cd test/
+ls
+cd terraria-world-1/
+git add --all
+git commit -m "."
+git push
+git pull
+ls
+cd flux/
+ls
+rm id_rsa
+rm id_rsa.pub 
+cd ..
+git add --all
+git commit -m "."
+git push
+./setup.sh 
+k get pods
+cd flux/
+./installFlux.sh 
+./installFlux.sh andrew
+./installHelmOperator.sh 
+k get pods
+k get pods -n flux
+k get pods -n flux -w
+k get pods 
+k get pods -n flux
+k logs helm-operator-65f688fd4f-rhp78
+k logs helm-operator-65f688fd4f-rhp78 -n flux
+k get pods
+k describe pod terraria-world-1-56985c47b5-j48gc
+k describe pod terraria-world-1-56985c47b5-j48gc|grep Node
+k get pods
+k delete pod terraria-world-1-56985c47b5-j48gc
+k get pods
+ke
+k logs terraria-world-1-56985c47b5-h7c86 -f
+k get pods -w
+k get pods
+k describe pod terraria-world-1-56985c47b5-h7c86|grep Node
+k get pods
+k logs terraria-world-1-56985c47b5-h7c86 -f
+k get pods
+k delete pod terraria-world-1-56985c47b5-h7c86
+k get pods
+k get events
+k get pods
+k logs terraria-world-1-56985c47b5-kvqf4 -f
+k get pods
+cat <<EOF >>/gke-startup-script/startup-script.yaml
+kind: DaemonSet
+apiVersion: extensions/v1beta1
+metadata:
+  name: startup-script
+  labels:
+    app: startup-script
+spec:
+  template:
+    metadata:
+      labels:
+        app: startup-script
+    spec:
+      hostPID: true
+      containers:
+        - name: startup-script
+          image: gcr.io/$DEVSHELL_PROJECT_ID/startup-script:v1
+          imagePullPolicy: Always
+          securityContext:
+            privileged: true
+          env:
+          - name: STARTUP_SCRIPT
+            value: |
+              #! /bin/bash
+
+                #this copies down the world file from the project specific world storage bucket
+
+                sudo apt-get update -y
+                sudp apt install wget
+                sudo mkdir /tmp/world
+                touch test.txt
+                wget https://storage.cloud.google.com/$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD /tmp/world/world/$WORLD
+EOF
+
+cat <<EOF >>./gke-startup-script/startup-script.yaml
+kind: DaemonSet
+apiVersion: extensions/v1beta1
+metadata:
+  name: startup-script
+  labels:
+    app: startup-script
+spec:
+  template:
+    metadata:
+      labels:
+        app: startup-script
+    spec:
+      hostPID: true
+      containers:
+        - name: startup-script
+          image: gcr.io/$DEVSHELL_PROJECT_ID/startup-script:v1
+          imagePullPolicy: Always
+          securityContext:
+            privileged: true
+          env:
+          - name: STARTUP_SCRIPT
+            value: |
+              #! /bin/bash
+
+                #this copies down the world file from the project specific world storage bucket
+
+                sudo apt-get update -y
+                sudp apt install wget
+                sudo mkdir /tmp/world
+                touch test.txt
+                wget https://storage.cloud.google.com/$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD /tmp/world/world/$WORLD
+EOF
+
+cat <<EOF >>startup-script.yaml
+kind: DaemonSet
+apiVersion: extensions/v1beta1
+metadata:
+  name: startup-script
+  labels:
+    app: startup-script
+spec:
+  template:
+    metadata:
+      labels:
+        app: startup-script
+    spec:
+      hostPID: true
+      containers:
+        - name: startup-script
+          image: gcr.io/$DEVSHELL_PROJECT_ID/startup-script:v1
+          imagePullPolicy: Always
+          securityContext:
+            privileged: true
+          env:
+          - name: STARTUP_SCRIPT
+            value: |
+              #! /bin/bash
+
+                #this copies down the world file from the project specific world storage bucket
+
+                sudo apt-get update -y
+                sudp apt install wget
+                sudo mkdir /tmp/world
+                touch test.txt
+                wget https://storage.cloud.google.com/$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD /tmp/world/world/$WORLD
+EOF
+
+ls
+rm startup-script.yaml 
+clear
+cd ..
+./setup.sh 
+kubectl apply -f startup-script.yaml 
+k get pods
+k get pods -w
+k get pods
+k describe pod terraria-world-1-56985c47b5-d6vs5
+k get pods
+k logs terraria-world-1-56985c47b5-d6vs5
+clear
+docker run gcr.io/exam-prep-285301/startup-script:v1
+sudo docker run gcr.io/exam-prep-285301/startup-script:v1
+make build
+docker run gcr.io/exam-prep-285301/startup-script:v1
+./setup.sh 
+gcloud builds submit --tag gcr.io/$DEVSHELL_PROJECT_ID/startup-script:v1
+ls
+cd gke-startup-script/
+gcloud builds submit --tag gcr.io/$DEVSHELL_PROJECT_ID/startup-script:v1
+k get pods
+k delete pod startup-script-2rhtc
+ls
+k apply -f startup-script-template.yaml 
+k get pods
+k logs startup-script-gqr4b
+sudo k logs startup-script-gqr4b
+k describe pod startup-script-gqr4b
+k get pods
+k delete pod terraria-world-1-56985c47b5-d6vs5
+k get pods
+k get pods -f
+k get pod s-w
+k get pods -w
+k get pods
+k logs terraria-world-1-56985c47b5-6fmtd
+cd ..
+./setup.sh 
+k get pods
+k get pods -n flux
+k get pods
+k get pods 0w
+k get pods -w
+k get pods -n flux
+k logs flux-54dbbd7d7b-b62lr
+k logs flux-54dbbd7d7b-b62lr -n flux
+k get pods
+k get pods -w
+k describe pod terraria-world-1-56985c47b5-tkbzj
+k get pods
+k logs terraria-world-1-56985c47b5-tkbzj -f
+k get pods
+k get daemonset
+k get daemonset -A
+ls
+cd gke-startup-script/
+ls
+kubectl apply -f startup-script.yaml 
+k get pods
+k get pods -f
+k get pods
+k logs startup-script-f5kkl
+k describe daemonset startup-script-f5kkl
+k describe pod startup-script-f5kkl
+kget events
+k get event
+k logs
+k get logs 
+k ge tpods
+k get pods
+ls
+rm startup-script
+ls
+rm startup-script.yaml 
+cd ..
+ls
+./setup.sh 
+k get pods
+k get pods -n flux
+./setup.sh 
+k get pods
+k describe pod startup-script-bj9lv
+k get pods
+ls
+git add --all
+git commit -m "."
+git push 
+ls
+for node in $(kubectl get nodes -o name | cut -f2 -d/); do     gcloud compute ssh $node       --command="sudo mkdir /tmp/world && sudo cp $WORLD /tmp/world"; done
+k get pods
+for node in $(kubectl get nodes -o name | cut -f2 -d/); do     gcloud compute ssh $node       --command="sudo mkdir /tmp/world &&cp $WORLD"; done
+for node in $(kubectl get nodes -o name | cut -f2 -d/); do     gcloud compute ssh $node       --command="sudo mkdir /tmp/world && cp $WORLD"; done
+./setup.sh 
+git pull
+./setup.sh 
+ls
+rm setup-script.sh 
+cat <<EOF >>startup-script.yaml
+kind: DaemonSet
+apiVersion: extensions/v1beta1
+metadata:
+  name: startup-script
+  namespace: kube-system
+  labels:
+    app: startup-script
+spec:
+  template:
+    metadata:
+      labels:
+        app: startup-script
+    spec:
+      hostPID: true
+      containers:
+        - name: startup-script
+          image: gcr.io/google-containers/startup-script:v1
+          securityContext:
+            privileged: true
+          env:
+          - name: STARTUP_SCRIPT
+            value: |
+              #! /bin/bash
+
+
+              set -o errexit
+              set -o pipefail
+              set -o nounset
+              mkdir /tmp/world
+              apt install wget
+              wget gs://$DEVSHELL_PROJECT_ID-$REGION-$NAME/$WORLD /tmp/world
+EOF
+
+kubectl apply -f startup-script.yaml 
+k get pods
+k get pods -n flux
+k logs helm-operator-65f688fd4f-6bqs5 -n flux
+k get pods
+k logs -n flux -l app=flux
+k get pods
+kubens flux
+k get pods
+k logs -l app=helm-operator
+k logs -l app=flux
+rm startup-script.yaml 
+ls
+./setup.sh 
+k get pods
+kubens flux
+k get pods 
+k logs helm-operator-65f688fd4f-th5kt
+ls
+./setup.sh 
+k get pods
+k get daemonset
+k get daemonset -A
+k describe daemonset startup-script -n kubesystem
+k describe daemonset startup-script -n kube-system
+kubens kube-system
+k get pods
+k logs startup-script-4t5g5
+./setup.sh
+k get pods
+k get pods -w
+k get pods
+kubens kube-system
+k get pods
+k logs startup-script-nljqc
+k logs startup-script-xfdww
+git add --all
+git commit -m "."
+git push
+git add --all
+git commit -m "."
+git push
+k get pods
+ls
+cp -R releases/ ~/flux-gcp-ammilam/
+cp -R flux ~/flux-gcp-ammilam/
+cd ..
+ls
+cd flux-gcp-ammilam/
+cp ~/test/terraria-world-1/setup.sh .
+ls
+helm list
+helm delete flux -n flux
+helm delete helm-operator -n flux
+./setup.sh 
+k get pods
+k logs startup-script-xfdww
+cd ~/test/terraria-world-1/
+./setup.sh 
+kubens kube-system
+k get pods
+k logs startup-script-l4b7z
+kubens default
+k get pods 
+k get pods -n flux
+cd flux/
+./installFlux.sh 
+./installFlux.sh andrew
+k get pods -n flux
+k get pods -n flux -w
+k logs -n flux -l app=flux
+k get pods
+k logs terraria-world-1-56985c47b5-l2v69
+k logs terraria-world-1-56985c47b5-l2v69 -f
+cd ..
+./setup.sh 
+cd flux/
+ls
+./installFlux.sh 
+k get pods
+kubens kube-system
+k get pods
+k logs startup-script-db2hv
+cd ..
+git add --all
+git commit -m "."
+git push
+git push -f
+k get pods
+kubens default
+k get pods
+k logs terraria-world-1-56985c47b5-827kr
+git add --all
+git commit -m "stuff"
+git push
+./setup.sh 
+k get pods
+ls
+cd test
+ls
+cd terraria-world-1/
+ls
+clear
+ls
+ls -al
+./setup.sh 
+docker run -it busybox
+docker run -it ryshe/terraria
+docker run -it ryshe/terraria bash
+git branch test
+git branch -a
+git checkout test
+git add --all
+git branch -a
+git add --all
+git commit -m "testing some shit"
+git push origin test
+./setup.sh 
+bash -x setup.sh
+k get pods
+k logs terraria-world-1-56985c47b5-5wbh8
+k logs terraria-world-1-56985c47b5-5wbh8 -f
+ls
+cd chart/
+ls
+helm delete -n flux flux
+helm delete -n flux helm-operator
+k get pods
+curl -L https://github.com/atombender/ktail/releases/download/v0.7.0/ktail-linux-amd64 -o ktail
+chmod +x ktail
+ktail 
+sudo mv ktail /user/local/bin
+sudo mv ktail /usr/local/bin
+ktail
+ktail @
+ktail &
+ls
+k get ods 
+k delete pod -l app=terraria
+k delete pod -l app=terraria-world-1
+k get pods
+k delete pod terraria-world-1-56985c47b5-5wbh8
+fg
+k get deployment
+k get deployment -o yaml
+git branch -a
+helm install terraria-world-1 .
+helm list
+helm upgrade --install terraria .
+checkout test
+git checkout test
+k get deploy
+k get deploy -o yaml
+k get pods
+ktail
+k get pods
+ktail &
+k delete pod terraria-world-1-55f968dc4d-8sz7q
+k get pods
+wget https://github.com/ammilam/terraria-world-1/raw/master/worlds_World_1.wldL -o '/world/worlds_World_1.wld'
+cd ..
+cd chart
+helm upgrade --install terraria .
+k get pods
+ktail
+ktail &
+jobs
+fg
+k get pod
+k delete pod terraria-world-1-dc897f8bd-46v4b
+k get pods
+fg
+ktail &
+k get pods
+k delete pod terraria-world-1-dc897f8bd-27hxk
+k get pods
+k logs terraria-world-1-dc897f8bd-bwslf
+k describe pod terraria-world-1-dc897f8bd-bwslf
+k get deploy
+k get deploy -o yaml
+docker run -it busybox
+helm upgrade --install terraria .
+k get deploy
+k get deploy -o yaml
+cd ..
+git add --all
+k get pods
+k exec -it terraria-world-1-84dbf9bcd4-m5pc2 -- sh
+ls
+git add --all
+git commit -m "updating stuff"
+git push
+git push origin test
+./setup.sh 
+k get pods
+k logs terraria-world-1-787b94756d-xckg4
+k get pods
+k get pods -w
+k get pvc
+k describe pvc terraria-world-1
+k get deploy -o yaml
+k get deploy -o yaml|grep strategy
+k get deploy -o yaml|grep -A5 strategy
+git add --all
+git commit -m ".
+git commit -m "."
+git push origin master
+git push origin test
+k get pods
+k get nodes
+k get pods -o wide
+fg
+cat ~/.bash_history
