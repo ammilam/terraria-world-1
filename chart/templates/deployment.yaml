@@ -31,7 +31,7 @@ spec:
               chmod 777 /world/config.json
               if [ -f '/terraria/world/{{ .Values.worldName }}.wld' ]; then
               echo "world file present"
-              else wget '{{ .Values.worldUrl }}{{ .Values.worldName }}' -O '/terraria/world/{{ .Values.worldName }}.wld'
+              else wget '{{ .Values.worldUrl }}{{ .Values.worldName }}.wld' -O '/terraria/world/{{ .Values.worldName }}.wld'
               fi
           volumeMounts:
           - name: terraria-worlds
