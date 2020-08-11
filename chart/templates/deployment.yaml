@@ -46,7 +46,7 @@ spec:
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ .Values.worldName }}
           args:
             - "-world"
             - "/terraria/world/worlds_World_1.wld"
