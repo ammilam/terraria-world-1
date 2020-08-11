@@ -14,7 +14,7 @@ spec:
     ref: master
   values:
     worldUrl: https://github.com/ammilam/terraria-world-files/raw/master/
-    worldName: BuildersWorkshop_3Journey
+    worldName: worlds_World_1
     replicaCount: 1
 
     image:
