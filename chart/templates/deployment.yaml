@@ -80,7 +80,7 @@ spec:
       - name: terraria-worlds
       {{- if .Values.persistence.enabled }}
         persistentVolumeClaim:
-          claimName: {{ template "terraria.fullname" . }}
+          claimName: ""
       {{- else }}
         emptyDir: {}
       {{- end }}
