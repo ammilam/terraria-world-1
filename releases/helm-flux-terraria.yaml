@@ -2,7 +2,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: terraria-world-1
+  name: terraria
   namespace: default
   annotations:
     fluxcd.io/automated: "true"
@@ -19,7 +19,7 @@ spec:
 
     image:
       repository: ryshe/terraria
-      tag: vanilla-1.4.0.5
+      tag: latest
       pullPolicy: Always
 
     imagePullSecrets: []

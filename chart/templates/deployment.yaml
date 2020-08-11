@@ -48,8 +48,8 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           args:
-            - "-world"
-            - "/terraria/world/{{ .Values.worldName }}.wld"
+            - "-worldpath"
+            - "/terraria/world/"
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
