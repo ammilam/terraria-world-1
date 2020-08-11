@@ -29,7 +29,7 @@ spec:
             - |
               cp /config/config.json /world/config.json
               chmod 777 /world/config.json
-              [ ! -f '/world/{{ .Values.worldName }}.wld' ] && wget '{{ .Values.worldUrl }}' -O '/terraria/world/{{ .Values.worldName }}.wld'
+              [ ! -f '/terraria/world/{{ .Values.worldName }}.wld' ] && wget '{{ .Values.worldUrl }}' -O '/terraria/world/{{ .Values.worldName }}.wld'
           volumeMounts:
           - name: terraria-worlds
             mountPath: /terraria/world
@@ -70,7 +70,7 @@ spec:
 #              port: http
           volumeMounts:
           - name: terraria-worlds
-            mountPath: /world
+            mountPath: /terraria/world
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       volumes:
