@@ -2,6 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 worldUrl: https://github.com/ammilam/terraria-world-files/raw/master/
+#worldName: worlds_World_1
 worldName: BuildersWorkshop_3Journey
 replicaCount: 1
 

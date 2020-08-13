@@ -31,7 +31,9 @@ spec:
               chmod 777 /world/config.json
               if [ -f '/terraria/world/{{ .Values.worldName }}.wld' ]; then
               echo "world file present"
-              else wget '{{ .Values.worldUrl }}{{ .Values.worldName }}.wld' -O '/terraria/world/{{ .Values.worldName }}.wld'
+              else 
+              wget 'https://github.com/ammilam/terraria-world-files/raw/master/BuildersWorkshop_3Journey.wld' -O '/terraria/world/BuildersWorkshop_3Journey.wld'
+              wget 'https://github.com/ammilam/terraria-world-files/raw/master/worlds_World_1.wld' -O '/terraria/world/worlds_World_1.wld'
               fi
           volumeMounts:
           - name: terraria-worlds
@@ -48,8 +50,8 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           args:
-            - "-worldpath"
-            - "/terraria/world/"
+            - "-world"
+            - '/terraria/world/{{ .Values.worldName }}.wld'
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
