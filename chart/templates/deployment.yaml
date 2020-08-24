@@ -33,7 +33,7 @@ spec:
               echo "world file present"
               else 
               wget 'https://github.com/ammilam/terraria-world-files/raw/master/{{ .Values.worldName }}' -O '/terraria/world/{{ .Values.worldName }}'
-              #fi
+              fi
           volumeMounts:
           - name: terraria-worlds
             mountPath: /terraria/world
