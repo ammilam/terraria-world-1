@@ -22,18 +22,18 @@ spec:
     spec:
       initContainers:
         - name: init-myservice
-          image: busybox:latest
+          image: alpine:latest
           command: ['sh']
           args:
             - -c
             - |
               cp /config/config.json /world/config.json
               chmod 777 /world/config.json
-              if [ -f '/terraria/world/{{ .Values.worldName }}.wld' ]; then
-              echo "world file present"
-              else 
+              #if [ -f '/terraria/world/{{ .Values.worldName }}.wld' ]; then
+              #echo "world file present"
+              #else 
               wget 'https://github.com/ammilam/terraria-world-files/raw/master/{{ .Values.worldName }}.wld' -O '/terraria/world/{{ .Values.worldName }}.wld'
-              fi
+              #fi
           volumeMounts:
           - name: terraria-worlds
             mountPath: /terraria/world
@@ -49,8 +49,8 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           args:
-          #  - "-world"
-          #  - '/terraria/world/{{ .Values.worldName }}.wld'
+            - "-world"
+            - '/terraria/world/{{ .Values.worldName }}.wld'
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
