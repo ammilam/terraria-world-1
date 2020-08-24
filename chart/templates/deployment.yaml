@@ -22,7 +22,7 @@ spec:
     spec:
       initContainers:
         - name: init-myservice
-          image: busybox:latest
+          image: alpine:latest
           command: ['sh']
           args:
             - -c
@@ -32,8 +32,7 @@ spec:
               if [ -f '/terraria/world/{{ .Values.worldName }}.wld' ]; then
               echo "world file present"
               else 
-              wget 'https://github.com/ammilam/terraria-world-files/raw/master/BuildersWorkshop_3Journey.wld' -O '/terraria/world/BuildersWorkshop_3Journey.wld'
-              wget 'https://github.com/ammilam/terraria-world-files/raw/master/worlds_World_1.wld' -O '/terraria/world/worlds_World_1.wld'
+              wget 'https://github.com/ammilam/terraria-world-files/raw/master/worlds_World_1.wld' -O '/terraria/world/{{ .Values.worldName }}.wld'
               fi
           volumeMounts:
           - name: terraria-worlds
