@@ -49,8 +49,8 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           args:
-            - "-world"
-            - '/terraria/world/{{ .Values.worldName }}.wld'
+          #  - "-world"
+          #  - '/terraria/world/{{ .Values.worldName }}.wld'
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -59,7 +59,7 @@ spec:
           stdin: {{ .Values.terraria.stdin }}
           env:
           - name: world
-            value: {{ .Values.worldName }}
+            value: '{{ .Values.worldName }}.wld'
           ports:
             - name: server
               containerPort: 7777
