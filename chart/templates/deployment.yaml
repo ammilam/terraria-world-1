@@ -29,10 +29,10 @@ spec:
             - |
               cp /config/config.json /world/config.json
               chmod 777 /world/config.json
-              #if [ -f '/terraria/world/{{ .Values.worldName }}.wld' ]; then
-              #echo "world file present"
-              #else 
-              wget 'https://github.com/ammilam/terraria-world-files/raw/master/{{ .Values.worldName }}.wld' -O '/terraria/world/{{ .Values.worldName }}.wld'
+              if [ -f '/terraria/world/{{ .Values.worldName }}' ]; then
+              echo "world file present"
+              else 
+              wget 'https://github.com/ammilam/terraria-world-files/raw/master/{{ .Values.worldName }}' -O '/terraria/world/{{ .Values.worldName }}'
               #fi
           volumeMounts:
           - name: terraria-worlds
@@ -50,16 +50,13 @@ spec:
         - name: {{ .Chart.Name }}
           args:
             - "-world"
-            - '/terraria/world/{{ .Values.worldName }}.wld'
+            - '/terraria/world/{{ .Values.worldName }}'
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           tty: {{ .Values.terraria.tty }}
           stdin: {{ .Values.terraria.stdin }}
-          env:
-          - name: world
-            value: '{{ .Values.worldName }}.wld'
           ports:
             - name: server
               containerPort: 7777
